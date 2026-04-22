@@ -249,3 +249,14 @@ afterEvaluate {
         variant.javaCompileProvider.get().dependsOn(downloadBootstraps)
     }
 }
+
+// دمج bootstrap في التطبيق
+task integrateBootstrap(type: Copy) {
+    from 'src/main/assets/bootstrap'
+    into 'src/main/cpp/bootstrap-aarch64'
+    doLast {
+        println "✅ Bootstrap integrated successfully!"
+    }
+}
+
+preBuild.dependsOn integrateBootstrap
