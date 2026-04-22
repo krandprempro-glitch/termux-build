@@ -4,7 +4,7 @@ plugins {
 
 ext {
     // The packageVariant defines the bootstrap variant that will be included in the app APK.
-    // This must be supported by com.termux.shared.termux.TermuxBootstrap.PackageVariant or app will
+    // This must be supported by com.termux.shared.termux.TerLinuxBootstrap.PackageVariant or app will
     // crash at startup.
     // Bootstrap of a different variant must not be manually installed by the user after app installation
     // by replacing $PREFIX since app code is dependant on the variant used to build the APK.
@@ -45,7 +45,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.termux"
+        applicationId "com.terlinux"
         minSdk buildMinSdk
         targetSdk buildTargetSdk
         versionCode 1022
@@ -60,16 +60,16 @@ android {
         buildConfigField "Integer", "TERMUX_APP__BOOTSTRAP_MAX_SDK", project.ext.bootstrapMaxSdk.toString()
         buildConfigField "String", "TERMUX_APP__BOOTSTRAP_MAX_RELEASE",
                 project.ext.bootstrapMaxRelease ? "\"" + project.ext.bootstrapMaxRelease + "\"" : "null"
-        buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TermuxApplication class
+        buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TerLinuxApplication class
 
-        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux"
-        manifestPlaceholders.TERMUX_APP_NAME = "Termux"
-        manifestPlaceholders.TERMUX_API_APP_NAME = "Termux:API"
-        manifestPlaceholders.TERMUX_BOOT_APP_NAME = "Termux:Boot"
-        manifestPlaceholders.TERMUX_FLOAT_APP_NAME = "Termux:Float"
-        manifestPlaceholders.TERMUX_STYLING_APP_NAME = "Termux:Styling"
-        manifestPlaceholders.TERMUX_TASKER_APP_NAME = "Termux:Tasker"
-        manifestPlaceholders.TERMUX_WIDGET_APP_NAME = "Termux:Widget"
+        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.terlinux"
+        manifestPlaceholders.TERMUX_APP_NAME = "TerLinux"
+        manifestPlaceholders.TERMUX_API_APP_NAME = "TerLinux:API"
+        manifestPlaceholders.TERMUX_BOOT_APP_NAME = "TerLinux:Boot"
+        manifestPlaceholders.TERMUX_FLOAT_APP_NAME = "TerLinux:Float"
+        manifestPlaceholders.TERMUX_STYLING_APP_NAME = "TerLinux:Styling"
+        manifestPlaceholders.TERMUX_TASKER_APP_NAME = "TerLinux:Tasker"
+        manifestPlaceholders.TERMUX_WIDGET_APP_NAME = "TerLinux:Widget"
 
         externalNativeBuild {
             ndkBuild {

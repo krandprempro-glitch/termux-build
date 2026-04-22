@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE resources [
-    <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
-    <!ENTITY TERMUX_APP_NAME "Termux">
-    <!ENTITY TERMUX_API_APP_NAME "Termux:API">
-    <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
-    <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
-    <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
-    <!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
-    <!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+    <!ENTITY TERMUX_PACKAGE_NAME "com.terlinux">
+    <!ENTITY TERMUX_APP_NAME "TerLinux">
+    <!ENTITY TERMUX_API_APP_NAME "TerLinux:API">
+    <!ENTITY TERMUX_BOOT_APP_NAME "TerLinux:Boot">
+    <!ENTITY TERMUX_FLOAT_APP_NAME "TerLinux:Float">
+    <!ENTITY TERMUX_STYLING_APP_NAME "TerLinux:Styling">
+    <!ENTITY TERMUX_TASKER_APP_NAME "TerLinux:Tasker">
+    <!ENTITY TERMUX_WIDGET_APP_NAME "TerLinux:Widget">
     ]>
 
 <resources>
@@ -18,14 +18,14 @@
 
 
 
-    <!-- Termux RUN_COMMAND permission -->
+    <!-- TerLinux RUN_COMMAND permission -->
     <string name="permission_run_command_label">Run commands in &TERMUX_APP_NAME; environment</string>
     <string name="permission_run_command_description">execute arbitrary commands within &TERMUX_APP_NAME;
         environment and access files</string>
 
 
 
-    <!-- Termux Bootstrap Packages Installation -->
+    <!-- TerLinux Bootstrap Packages Installation -->
     <string name="bootstrap_installer_body">Installing bootstrap packages…</string>
     <string name="bootstrap_error_title">&TERMUX_APP_NAME; Bootstrap Error</string>
     <string name="bootstrap_error_body">&TERMUX_APP_NAME; was unable to install the bootstrap packages.</string>
@@ -104,25 +104,25 @@
 
 
 
-    <!-- Termux Notifications -->
+    <!-- TerLinux Notifications -->
     <string name="notification_action_exit">Exit</string>
     <string name="notification_action_wake_lock">Acquire wakelock</string>
     <string name="notification_action_wake_unlock">Release wakelock</string>
 
 
 
-    <!-- TermuxService -->
+    <!-- TerLinuxService -->
     <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; requires
         \"Display over other apps\" permission to start terminal sessions from background on Android >= 10.
         Grants it from Settings -> Apps -> &TERMUX_APP_NAME; -> Advanced</string>
-    <string name="error_termux_service_invalid_execution_command_runner">Invalid execution command runner to TermuxService: `%1$s`</string>
-    <string name="error_termux_service_unsupported_execution_command_runner">Unsupported execution command runner to TermuxService: `%1$s`</string>
-    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Unsupported execution command shell create mode to TermuxService: `%1$s`</string>
+    <string name="error_termux_service_invalid_execution_command_runner">Invalid execution command runner to TerLinuxService: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">Unsupported execution command runner to TerLinuxService: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Unsupported execution command shell create mode to TerLinuxService: `%1$s`</string>
     <string name="error_termux_service_execution_command_shell_name_unset">Shell name not set but `%1$s` shell create mode passed</string>
 
 
 
-    <!-- Termux RunCommandService -->
+    <!-- TerLinux RunCommandService -->
     <string name="error_run_command_service_invalid_intent_action">Invalid intent action to RunCommandService: `%1$s`</string>
     <string name="error_run_command_service_invalid_execution_command_runner">Invalid execution command runner to RunCommandService: `%1$s`</string>
     <string name="error_run_command_service_mandatory_extra_missing">Mandatory extra missing to RunCommandService: \"%1$s\"</string>
@@ -130,7 +130,7 @@
 
 
 
-    <!-- Termux File Receiver -->
+    <!-- TerLinux File Receiver -->
     <string name="title_file_received">Save file in ~/downloads/</string>
     <string name="action_file_received_edit">Edit</string>
     <string name="action_file_received_open_directory">Open directory</string>
@@ -138,15 +138,15 @@
 
 
     <!-- Miscellaneous -->
-    <string name="error_termux_service_start_failed_general">Failed to start TermuxService. Check logcat for exception message.</string>
-    <string name="error_termux_service_start_failed_bg">Failed to start TermuxService while app is in background due to android bg restrictions.</string>
+    <string name="error_termux_service_start_failed_general">Failed to start TerLinuxService. Check logcat for exception message.</string>
+    <string name="error_termux_service_start_failed_bg">Failed to start TerLinuxService while app is in background due to android bg restrictions.</string>
 
 
 
-    <!-- Termux Settings -->
+    <!-- TerLinux Settings -->
     <string name="title_activity_termux_settings">&TERMUX_APP_NAME; Settings</string>
 
-    <!-- Termux App Preferences -->
+    <!-- TerLinux App Preferences -->
     <string name="termux_preferences_title">&TERMUX_APP_NAME;</string>
     <string name="termux_preferences_summary">Preferences for &TERMUX_APP_NAME; app</string>
 
@@ -213,25 +213,25 @@
 
 
 
-    <!-- Termux:API App Preferences -->
+    <!-- TerLinux:API App Preferences -->
     <string name="termux_api_preferences_title">&TERMUX_API_APP_NAME;</string>
     <string name="termux_api_preferences_summary">Preferences for &TERMUX_API_APP_NAME; app</string>
 
 
 
-    <!-- Termux:Float App Preferences -->
+    <!-- TerLinux:Float App Preferences -->
     <string name="termux_float_preferences_title">&TERMUX_FLOAT_APP_NAME;</string>
     <string name="termux_float_preferences_summary">Preferences for &TERMUX_FLOAT_APP_NAME; app</string>
 
 
 
-    <!-- Termux:Tasker App Preferences -->
+    <!-- TerLinux:Tasker App Preferences -->
     <string name="termux_tasker_preferences_title">&TERMUX_TASKER_APP_NAME;</string>
     <string name="termux_tasker_preferences_summary">Preferences for &TERMUX_TASKER_APP_NAME; app</string>
 
 
 
-    <!-- Termux:Widget App Preferences -->
+    <!-- TerLinux:Widget App Preferences -->
     <string name="termux_widget_preferences_title">&TERMUX_WIDGET_APP_NAME;</string>
     <string name="termux_widget_preferences_summary">Preferences for &TERMUX_WIDGET_APP_NAME; app</string>
 

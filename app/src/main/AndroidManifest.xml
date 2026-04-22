@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.termux"
+    package="com.terlinux"
     android:installLocation="internalOnly"
     android:sharedUserId="${TERMUX_PACKAGE_NAME}"
     android:sharedUserLabel="@string/shared_user_label">
@@ -39,7 +39,7 @@
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
-        android:name=".app.TermuxApplication"
+        android:name=".app.TerLinuxApplication"
         android:allowBackup="false"
         android:banner="@drawable/banner"
         android:extractNativeLibs="true"
@@ -48,17 +48,17 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/Theme.TermuxApp.DayNight.DarkActionBar"
+        android:theme="@style/Theme.TerLinuxApp.DayNight.DarkActionBar"
         tools:targetApi="m">
 
         <activity
-            android:name=".app.TermuxActivity"
+            android:name=".app.TerLinuxActivity"
             android:exported="true"
             android:configChanges="orientation|screenSize|smallestScreenSize|density|screenLayout|keyboard|keyboardHidden|navigation"
             android:label="@string/application_name"
             android:launchMode="singleTask"
             android:resizeableActivity="true"
-            android:theme="@style/Theme.TermuxActivity.DayNight.NoActionBar"
+            android:theme="@style/Theme.TerLinuxActivity.DayNight.NoActionBar"
             tools:targetApi="n">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -79,7 +79,7 @@
         <activity-alias
             android:name=".HomeActivity"
             android:exported="true"
-            android:targetActivity=".app.TermuxActivity">
+            android:targetActivity=".app.TerLinuxActivity">
 
             <!-- Launch activity automatically on boot on Android Things devices -->
             <intent-filter>
@@ -94,7 +94,7 @@
             android:name=".app.activities.HelpActivity"
             android:exported="false"
             android:label="@string/application_name"
-            android:parentActivityName=".app.TermuxActivity"
+            android:parentActivityName=".app.TerLinuxActivity"
             android:resizeableActivity="true"
             tools:targetApi="n" />
 
@@ -102,7 +102,7 @@
             android:name=".app.activities.SettingsActivity"
             android:exported="true"
             android:label="@string/title_activity_termux_settings"
-            android:theme="@style/Theme.TermuxApp.DayNight.NoActionBar" />
+            android:theme="@style/Theme.TerLinuxApp.DayNight.NoActionBar" />
 
         <activity
             android:name=".shared.activities.ReportActivity"
@@ -145,7 +145,7 @@
             android:exported="true"
             android:targetActivity=".app.api.file.FileReceiverActivity">
 
-            <!-- Accept multiple file types to let Termux be usable as generic file viewer. -->
+            <!-- Accept multiple file types to let TerLinux be usable as generic file viewer. -->
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -160,7 +160,7 @@
         </activity-alias>
 
         <provider
-            android:name=".filepicker.TermuxDocumentsProvider"
+            android:name=".filepicker.TerLinuxDocumentsProvider"
             android:authorities="${TERMUX_PACKAGE_NAME}.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -171,7 +171,7 @@
         </provider>
 
         <provider
-            android:name=".app.TermuxOpenReceiver$ContentProvider"
+            android:name=".app.TerLinuxOpenReceiver$ContentProvider"
             android:authorities="${TERMUX_PACKAGE_NAME}.files"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -179,7 +179,7 @@
 
 
         <receiver
-            android:name=".app.TermuxOpenReceiver"
+            android:name=".app.TerLinuxOpenReceiver"
             android:exported="false" />
 
         <receiver
@@ -196,7 +196,7 @@
 
 
         <service
-            android:name=".app.TermuxService"
+            android:name=".app.TerLinuxService"
             android:exported="false" />
 
         <service
