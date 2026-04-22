@@ -1,4 +1,4 @@
-package com.termux.shared.termux.shell.command.environment;
+package com.terlinux.shared.termux.shell.command.environment;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -6,17 +6,17 @@ import android.content.pm.PackageInfo;
 
 import androidx.annotation.NonNull;
 
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.shell.command.ExecutionCommand;
-import com.termux.shared.shell.command.environment.AndroidShellEnvironment;
-import com.termux.shared.shell.command.environment.ShellEnvironmentUtils;
-import com.termux.shared.shell.command.environment.ShellCommandShellEnvironment;
-import com.termux.shared.termux.TermuxBootstrap;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.shell.TermuxShellUtils;
+import com.terlinux.shared.android.PackageUtils;
+import com.terlinux.shared.errors.Error;
+import com.terlinux.shared.file.FileUtils;
+import com.terlinux.shared.logger.Logger;
+import com.terlinux.shared.shell.command.ExecutionCommand;
+import com.terlinux.shared.shell.command.environment.AndroidShellEnvironment;
+import com.terlinux.shared.shell.command.environment.ShellEnvironmentUtils;
+import com.terlinux.shared.shell.command.environment.ShellCommandShellEnvironment;
+import com.terlinux.shared.termux.TermuxBootstrap;
+import com.terlinux.shared.termux.TermuxConstants;
+import com.terlinux.shared.termux.shell.TermuxShellUtils;
 
 import java.nio.charset.Charset;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.termux.terminal;
+package com.terlinux.terminal;
 
 import android.view.KeyEvent;
 

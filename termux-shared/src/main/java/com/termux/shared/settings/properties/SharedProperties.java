@@ -1,4 +1,4 @@
-package com.termux.shared.settings.properties;
+package com.terlinux.shared.settings.properties;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -9,9 +9,9 @@ import androidx.annotation.Nullable;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
 import com.google.common.primitives.Primitives;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.file.filesystem.FileType;
-import com.termux.shared.logger.Logger;
+import com.terlinux.shared.file.FileUtils;
+import com.terlinux.shared.file.filesystem.FileType;
+import com.terlinux.shared.logger.Logger;
 
 import java.io.File;
 import java.io.FileInputStream;

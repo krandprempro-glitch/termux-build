@@ -1,4 +1,4 @@
-package com.termux.shared.shell.command;
+package com.terlinux.shared.shell.command;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,15 +6,15 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.shell.command.result.ResultConfig;
-import com.termux.shared.shell.command.result.ResultData;
-import com.termux.shared.errors.Error;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.shell.command.runner.app.AppShell;
-import com.termux.terminal.TerminalSession;
+import com.terlinux.shared.data.IntentUtils;
+import com.terlinux.shared.shell.command.result.ResultConfig;
+import com.terlinux.shared.shell.command.result.ResultData;
+import com.terlinux.shared.errors.Error;
+import com.terlinux.shared.logger.Logger;
+import com.terlinux.shared.markdown.MarkdownUtils;
+import com.terlinux.shared.data.DataUtils;
+import com.terlinux.shared.shell.command.runner.app.AppShell;
+import com.terlinux.terminal.TerminalSession;
 
 import java.util.Collections;
 import java.util.List;
@@ -177,7 +177,7 @@ public class ExecutionCommand {
 
     /**
      * The {@link ExecutionCommand} custom log level for background {@link AppShell}
-     * commands. By default, @link com.termux.shared.shell.StreamGobbler} only logs stdout and
+     * commands. By default, @link com.terlinux.shared.shell.StreamGobbler} only logs stdout and
      * stderr if {@link Logger} `CURRENT_LOG_LEVEL` is >= {@link Logger#LOG_LEVEL_VERBOSE} and
      * {@link AppShell} only logs stdin if `CURRENT_LOG_LEVEL` is >=
      * {@link Logger#LOG_LEVEL_DEBUG}.

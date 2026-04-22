@@ -1,14 +1,14 @@
-package com.termux.shared.models;
+package com.terlinux.shared.models;
 
 import androidx.annotation.Keep;
 
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.android.AndroidUtils;
+import com.terlinux.shared.markdown.MarkdownUtils;
+import com.terlinux.shared.android.AndroidUtils;
 
 import java.io.Serializable;
 
 /**
- * An object that stored info for {@link com.termux.shared.activities.ReportActivity}.
+ * An object that stored info for {@link com.terlinux.shared.activities.ReportActivity}.
  */
 public class ReportInfo implements Serializable {
 

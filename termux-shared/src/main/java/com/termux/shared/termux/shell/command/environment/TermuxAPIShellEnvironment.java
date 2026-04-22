@@ -1,4 +1,4 @@
-package com.termux.shared.termux.shell.command.environment;
+package com.terlinux.shared.termux.shell.command.environment;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -6,10 +6,10 @@ import android.content.pm.PackageInfo;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.shell.command.environment.ShellEnvironmentUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxUtils;
+import com.terlinux.shared.android.PackageUtils;
+import com.terlinux.shared.shell.command.environment.ShellEnvironmentUtils;
+import com.terlinux.shared.termux.TermuxConstants;
+import com.terlinux.shared.termux.TermuxUtils;
 
 import java.util.HashMap;
 

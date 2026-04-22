@@ -1,4 +1,4 @@
-package com.termux.shared.data;
+package com.terlinux.shared.data;
 
 import android.os.Bundle;
 

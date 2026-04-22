@@ -1,4 +1,4 @@
-package com.termux.terminal;
+package com.terlinux.terminal;
 
 public class RectangularAreasTest extends TerminalTestCase {
 

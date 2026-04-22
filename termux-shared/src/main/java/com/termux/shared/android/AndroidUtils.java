@@ -1,4 +1,4 @@
-package com.termux.shared.android;
+package com.terlinux.shared.android;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,10 +11,10 @@ import android.system.OsConstants;
 import androidx.annotation.NonNull;
 
 import com.google.common.base.Joiner;
-import com.termux.shared.R;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
+import com.terlinux.shared.R;
+import com.terlinux.shared.data.DataUtils;
+import com.terlinux.shared.logger.Logger;
+import com.terlinux.shared.markdown.MarkdownUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

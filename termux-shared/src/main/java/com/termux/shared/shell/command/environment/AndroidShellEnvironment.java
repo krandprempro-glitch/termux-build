@@ -1,11 +1,11 @@
-package com.termux.shared.shell.command.environment;
+package com.terlinux.shared.shell.command.environment;
 
 import android.content.Context;
 import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import com.termux.shared.shell.command.ExecutionCommand;
+import com.terlinux.shared.shell.command.ExecutionCommand;
 
 import java.io.File;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.termux.shared.termux.shell.am;
+package com.terlinux.shared.termux.shell.am;
 
 import android.content.Context;
 
@@ -6,21 +6,21 @@ import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.errors.Error;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.net.socket.local.LocalClientSocket;
-import com.termux.shared.net.socket.local.LocalServerSocket;
-import com.termux.shared.net.socket.local.LocalSocketManager;
-import com.termux.shared.net.socket.local.LocalSocketManagerClientBase;
-import com.termux.shared.net.socket.local.LocalSocketRunConfig;
-import com.termux.shared.shell.am.AmSocketServerRunConfig;
-import com.termux.shared.shell.am.AmSocketServer;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.crash.TermuxCrashUtils;
-import com.termux.shared.termux.plugins.TermuxPluginUtils;
-import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
-import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
-import com.termux.shared.termux.shell.command.environment.TermuxAppShellEnvironment;
+import com.terlinux.shared.errors.Error;
+import com.terlinux.shared.logger.Logger;
+import com.terlinux.shared.net.socket.local.LocalClientSocket;
+import com.terlinux.shared.net.socket.local.LocalServerSocket;
+import com.terlinux.shared.net.socket.local.LocalSocketManager;
+import com.terlinux.shared.net.socket.local.LocalSocketManagerClientBase;
+import com.terlinux.shared.net.socket.local.LocalSocketRunConfig;
+import com.terlinux.shared.shell.am.AmSocketServerRunConfig;
+import com.terlinux.shared.shell.am.AmSocketServer;
+import com.terlinux.shared.termux.TermuxConstants;
+import com.terlinux.shared.termux.crash.TermuxCrashUtils;
+import com.terlinux.shared.termux.plugins.TermuxPluginUtils;
+import com.terlinux.shared.termux.settings.properties.TermuxAppSharedProperties;
+import com.terlinux.shared.termux.settings.properties.TermuxPropertyConstants;
+import com.terlinux.shared.termux.shell.command.environment.TermuxAppShellEnvironment;
 
 /**
  * A wrapper for {@link AmSocketServer} for termux-app usage.
